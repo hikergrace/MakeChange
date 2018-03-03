@@ -36,11 +36,12 @@ public class MakeChangeApp {
 		// convert itemCost and custPay to int to account for rounding and the decimal places for change
 		// the integers for the denominations are as pennies so that everything is in the same scale
 		int twenty = 2000, ten = 1000, five = 500, one = 100, quarter = 25, dime = 10, nickel = 5, penny = 1;
+		// taking the change to customer calculated in the above method and converted to pennies
 		int change = (int)(changeToCust * 100);
 		
 		int changeFromTwenty = change / twenty;
 		change = change % twenty;
-		System.out.println("Thanks! Your change is: $" + changeToCust + "!\nYou get " + changeFromTwenty + " twenty dollar bill");
+		System.out.println("Thanks! Your change is: $" + changeToCust + ".\nYou get " + changeFromTwenty + " twenty dollar bills.");
 		
 		int changeFromTen = change / ten;
 		change = change % ten;
