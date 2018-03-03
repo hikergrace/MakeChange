@@ -8,11 +8,11 @@ public class MakeChangeApp {
 		Scanner keyboard = new Scanner(System.in);
 		
 		//asking the customer the cost of the item
-		System.out.print("How much is the item? (example: if it is $5, type 5.00)");
+		System.out.print("How much does your item cost? (example: if it is $5, type 5.00)");
 		double itemCost = keyboard.nextDouble();
 		
 		//The user is then prompted asking how much money was tendered by the customer.
-		System.out.print("How much money are you giving me? ex. 6.00 ");
+		System.out.print("How much money are you giving me? ");
 		double custPay = keyboard.nextDouble();
 		
 		keyboard.close();
@@ -21,38 +21,38 @@ public class MakeChangeApp {
 		double changeToCust = custPay - itemCost;
 		
 		if(custPay < itemCost) {
-			System.out.println("You still owe me $" + (itemCost - custPay));
+			System.out.println("Uh, oh! You still owe me $" + (itemCost - custPay));
 		} else if (custPay > itemCost ){
-			//call a makeChange method
-		//System.out.println("Change: " + changeToCust);
+		
+		//call a makeChange method
 		makeChange(changeToCust);
 		} else {
-			System.out.println("Thank you for exact payment.");
+			System.out.println("Thank you for exact payment!");
 		}
 	}
 
-		//makeChange method goes here, need to use division and modulus
+		//makeChange method goes here, use division and modulus, to get remainder and figure out how much change the user gets back in dollars and cents
 	public static void makeChange(double changeToCust) {
-		// convert itemCost and custPay to int: 
+		// convert itemCost and custPay to int to account for rounding and the decimal places for change
+		// the integers for the denominations are as pennies so that everything is in the same scale
 		int twenty = 2000, ten = 1000, five = 500, one = 100, quarter = 25, dime = 10, nickel = 5, penny = 1;
 		int change = (int)(changeToCust * 100);
-		//System.out.println(change + " IcostInt");
 		
 		int changeFromTwenty = change / twenty;
 		change = change % twenty;
-		System.out.println("You get " + changeFromTwenty + " twenty dollar bill(s)");
+		System.out.println("Thanks! Your change is: $" + changeToCust + "!\nYou get " + changeFromTwenty + " twenty dollar bill");
 		
 		int changeFromTen = change / ten;
 		change = change % ten;
-		System.out.println("You get " + changeFromTen + " ten dollar bill(s).");
+		System.out.println("You get " + changeFromTen + " ten dollar bills.");
 		
 		int changeFromFive = change / five;
 		change = change % five;
-		System.out.println("You get " + changeFromFive + " five dollar bill(s).");
+		System.out.println("You get " + changeFromFive + " five dollar bills.");
 		
 		int changeFromOne = change / one;
 		change = change % one;
-		System.out.println("You get " + changeFromOne + " one dollar bill(s).");
+		System.out.println("You get " + changeFromOne + " one dollar bills.");
 		
 		int changeFromQuarter = change / quarter;
 		change = change % quarter;
