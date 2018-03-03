@@ -14,6 +14,6 @@ Type in the amount the item costs, using two decimal places and <strong>no dolla
 Ex. for an item that is $5.75, type 5.75; for an item that is $5, type in 5.00
 
 #### Lessons Learned
-I could use probably use arrays and write less code
-This helped me understand casting a little better
-Although I've given instructions to the user to not put in a dollar sign, I'm not sure how to account for a user doing that.
+*I could use probably use arrays and write less code
+*This helped me understand casting a little better
+*Although I've given instructions to the user to not put in a dollar sign, I'm not sure how to account for a user doing that.
