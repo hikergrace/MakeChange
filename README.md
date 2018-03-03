@@ -10,7 +10,7 @@ If the customer owes more money, the app will let them know how much.
 
 #### How to Run This Project
 Click run.
-Type in the amount the item costs, using two decimal places and <strong>no dollar sign<strong>, and click ENTER. 
+Type in the amount the item costs, using two decimal places and <strong>no dollar sign</strong>, and click ENTER. 
 Ex. for an item that is $5.75, type 5.75; for an item that is $5, type in 5.00
 
 #### Lessons Learned
