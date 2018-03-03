@@ -6,10 +6,10 @@ Program to calculate change.
 Technologies used:
 *Java Expressions (this is up to me)
 
-####Project Description
+###Project Description
 
-#### How to Run This Project
+### How to Run This Project
 
 
-####Lessons Learned
+###Lessons Learned
 
